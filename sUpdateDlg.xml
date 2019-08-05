@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="675,347" caption="0,0,0,30">
+    <Font name="微软雅黑" size="13" bold="false" italic="false" default="true" />
+    <VerticalLayout bordersize="1" bkcolor="#FFFFFFFF" bordercolor="#FF47484B" inset="1,1,1,1">
+        <HorizontalLayout name="background" height="30">
+            <Label name="caption" text="更新日志" width="300" bkimage="UI\BKImage\topbar.png" textpadding="5,0,0,0" textcolor="#00FF0000" disabledtextcolor="#FFA7A6AA" font="1" align="lefttop" />
+            <Control bkimage="UI\BKImage\topbar.png" />
+        </HorizontalLayout>
+        <VerticalLayout bkcolor="#FFFFFFFF">
+            <RichEdit name="msg_text" padding="5,5,5,5" vscrollbar="true" multiline="true" autovscroll="true" readonly="true" rich="true" />
+            <Progress name="msg_pg" height="12" bkimage="file=&apos;UI\BKImage\button_pushed.png&apos; corner=&apos;6,6,6,6&apos;" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" foreimage="UI\BKImage\progress_fore.png" min="0" max="100" value="0" hor="true" />
+        </VerticalLayout>
+        <HorizontalLayout name="TextLayout" height="40" bkimage="UI\BKImage\bottonbar.png" bkcolor="#FFFFFFFF">
+            <HorizontalLayout width="490" height="40">
+                <Text name="myText" text="更新" padding="5,12,0,0" textpadding="2,0,2,0" textcolor="#000000FF" disabledtextcolor="#FFA7A6AA" align="lefttop" />
+            </HorizontalLayout>
+            <HorizontalLayout width="170" height="40">
+                <Button name="updatebtn" text="升级" width="75" height="28" padding="2,2,2,2" bkcolor="#FFFFFBF0" bordercolor="#00C0DCC0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;UI\BKImage\button_normal.png&apos; corner=&apos;4,4,4,4&apos;" hotimage="file=&apos;UI\MessageDialog\Ok_hover.png&apos; corner=&apos;5,5,5,5&apos;" pushedimage="file=&apos;UI\MessageDialog\Ok_down.png&apos; corner=&apos;5,5,5,5&apos;"/>
+                <Button name="cancelbtn" text="取消" width="75" height="28" padding="2,2,2,2" bkcolor="#FFFFFBF0" bordercolor="#00C0DCC0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;UI\BKImage\button_normal.png&apos; corner=&apos;4,4,4,4&apos;" hotimage="file=&apos;UI\MessageDialog\Ok_hover.png&apos; corner=&apos;5,5,5,5&apos;" pushedimage="file=&apos;UI\MessageDialog\Ok_down.png&apos; corner=&apos;5,5,5,5&apos;"/>
+            </HorizontalLayout>
+        </HorizontalLayout>
+    </VerticalLayout>
+</Window>
